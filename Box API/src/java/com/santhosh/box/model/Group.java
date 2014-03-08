@@ -10,16 +10,19 @@ package com.santhosh.box.model;
  *
  * @author sanchand
  */
-class Lock {
+public class Group {
     
     private String type;
     private String id;
-    private User created_by;
+    private String name;
     private String created_at;
-    private String expires_at;
-    private boolean is_download_prevented;
+    private String modified_at;
 
-    public Lock() {
+    public Group(String id) {
+        this.id = id;
+    }
+
+    public Group() {
     }
 
     public String getType() {
@@ -38,12 +41,12 @@ class Lock {
         this.id = id;
     }
 
-    public User getCreated_by() {
-        return created_by;
+    public String getName() {
+        return name;
     }
 
-    public void setCreated_by(User created_by) {
-        this.created_by = created_by;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getCreated_at() {
@@ -54,20 +57,12 @@ class Lock {
         this.created_at = created_at;
     }
 
-    public String getExpires_at() {
-        return expires_at;
+    public String getModified_at() {
+        return modified_at;
     }
 
-    public void setExpires_at(String expires_at) {
-        this.expires_at = expires_at;
-    }
-
-    public boolean isIs_download_prevented() {
-        return is_download_prevented;
-    }
-
-    public void setIs_download_prevented(boolean is_download_prevented) {
-        this.is_download_prevented = is_download_prevented;
+    public void setModified_at(String modified_at) {
+        this.modified_at = modified_at;
     }
     
     

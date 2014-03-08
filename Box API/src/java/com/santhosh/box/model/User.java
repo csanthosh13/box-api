@@ -39,6 +39,10 @@ class User {
     public User() {
     }
 
+    public User(String id) {
+        this.id = id;
+    }
+
     public String getType() {
         return type;
     }
